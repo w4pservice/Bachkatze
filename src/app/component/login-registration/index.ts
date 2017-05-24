@@ -1,2 +1,2 @@
-export class LoginRegistrationComponent {}
+export class LoginRegistrationComponent {};
 
