@@ -5,10 +5,12 @@ import { HttpModule } from '@angular/http';
 import { FlexLayoutModule } from '@angular/flex-layout';
 
 import { AppComponent } from './app.component';
+import { LoginRegistrationComponent } from './component/login-registration';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    LoginRegistrationComponent
   ],
   imports: [
     BrowserModule,
