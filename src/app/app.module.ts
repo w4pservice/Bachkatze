@@ -4,19 +4,19 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { FlexLayoutModule } from '@angular/flex-layout';
 
+import { LoginRegistrationModule } from './component/login-registration/login-registration.module';
 import { AppComponent } from './app.component';
-import { LoginRegistrationComponent } from './component/login-registration';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    LoginRegistrationComponent
+    AppComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+    LoginRegistrationModule
   ],
   providers: [],
   bootstrap: [AppComponent]
