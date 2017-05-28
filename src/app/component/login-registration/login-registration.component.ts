@@ -6,4 +6,26 @@ import { Component } from '@angular/core';
   styleUrls: ['./login-registration.component.css']
 })
 
-export class LoginRegistrationComponent { }
+export class LoginRegistrationComponent {
+
+  login: string = "active";
+  registration: string ="";
+  show: boolean = true;
+
+  onClick() {
+    if(this.login === "active") {
+      this.login = "";
+      this.registration = "active";
+      this.show =!this.show;
+    }
+    else {
+      this.login = "active";
+      this.registration = "";
+      this.show =!this.show;
+    }
+  }
+
+  onRegistration() {
+    
+  }
+}
