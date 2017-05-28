@@ -1,14 +1,14 @@
 
 <div class="container" div fxLayout="row" fxLayoutAlign="center center" >
-  <div class="item">das kommt daneben</div>
+  <div class="item">  <img src="{{logo}}"></div>
   <div class="panel panel-primary item">
     <div class="panel-heading">
       <h1 class="panel-title">Bachkatze Willkommen</h1>
     </div>
   <div class="panel-body">
     <ul class="nav nav-tabs">
-      <li role="presentation" class='{{login}}'><a (click)="onClick()"  href="#">Login</a></li>
-      <li role="presentation" class='{{registration}}'><a (click)="onClick()" href="#">Registrieren</a></li>
+      <li role="presentation" class='{{login}}'><a (click)="onClick('login')"  href="#">Login</a></li>
+      <li role="presentation" class='{{registration}}'><a (click)="onClick('registration')" href="#">Registrieren</a></li>
     </ul>
       <login-component class="login" *ngIf="show"></login-component>
       <registration-component *ngIf="!show"></registration-component>

@@ -10,18 +10,20 @@ export class LoginRegistrationComponent {
 
   login: string = "active";
   registration: string ="";
+  lastClick: string = "login";
   show: boolean = true;
-
-  onClick() {
-    if(this.login === "active") {
-      this.login = "";
-      this.registration = "active";
-      this.show =!this.show;
-    }
-    else {
-      this.login = "active";
-      this.registration = "";
-      this.show =!this.show;
+  logo: string = "./assets/logo.png";
+  onClick(name: string): void {
+    if(this.lastClick != name) {
+      this.lastClick = name;
+      this.show = !this.show;
+      if(this.login.length >0) {
+        this.login = "";
+        this.registration = "active";
+      }else {
+        this.login = "active";
+        this.registration = "";
+      }
     }
   }
 
